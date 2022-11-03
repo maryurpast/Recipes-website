@@ -7,7 +7,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 body {
-  margin: 135px auto;
+  margin: 35px auto;
   font-family: "Nunito", sans-serif;
 }
 
@@ -21,10 +21,10 @@ body {
     url(../img/bg.png) no-repeat center;
   background-size: cover;
   padding: 47px 0;
-  margin-bottom: 100px;
+  margin: 100px 0;
 }
 
-h1 {
+.header h1 {
   font-size: 72px;
   font-weight: bold;
   color: #fff;
@@ -40,11 +40,33 @@ h1 {
   margin: 0 auto;
 }
 
-.row p {
+.homepage-content p {
   font-size: 28px;
   font-weight: bold;
   padding-top: 20px;
   color: #272142;
+}
+
+.about-header {
+  margin: 126px auto 100px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 72px;
+}
+
+.about-header-info {
+  margin: 62px 0 0 16px;
+}
+
+.about-header-info h2 {
+  font-weight: bold;
+  font-size: 64px;
+}
+
+.about-header-info p {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
 }
 
 @media (max-width: 913px) {
@@ -52,7 +74,11 @@ h1 {
     margin-bottom: 60px;
   }
 
-  .row p {
+  .header h1 {
+    font-size: 68px;
+  }
+
+  .homepage-content p {
     font-size: 22px;
     padding-top: 5px;
     margin-bottom: 0;
@@ -64,7 +90,7 @@ h1 {
     margin-bottom: 40px;
   }
 
-  h1 {
+  .header h1 {
     font-size: 56px;
   }
 
@@ -72,8 +98,32 @@ h1 {
     font-size: 20px;
   }
 
-  .row p {
+  .homepage-content p {
     font-size: 18px;
     padding-top: 5px;
+  }
+
+  .about-header {
+    font-size: 58px;
+    margin: 50px auto;
+  }
+
+  .about-header-info {
+    margin: 30px auto;
+  }
+
+  .about-header-info h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 350px) {
+  .about-header {
+    font-size: 48px;
+    margin: 30px auto;
+  }
+
+  .about-header-info h2 {
+    font-size: 36px;
   }
 }
