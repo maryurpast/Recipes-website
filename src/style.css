@@ -54,17 +54,30 @@ body {
   font-size: 72px;
 }
 
-.about-header-info {
+.page-info {
   margin: 62px 0 0 16px;
 }
 
-.about-header-info h2 {
+.page-info h2 {
   font-weight: bold;
   font-size: 64px;
 }
 
-.about-header-info p {
+.about-page-info {
   font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.page-info h3 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #662eed;
+}
+
+.contact-page-info {
+  font-size: 24px;
   font-weight: normal;
   line-height: 30px;
 }
@@ -162,11 +175,11 @@ body {
     margin-bottom: 20px;
   }
 
-  .about-header-info {
+  .page-info {
     margin: 30px auto;
   }
 
-  .about-header-info h2 {
+  .page-info h2 {
     font-size: 32px;
   }
 
