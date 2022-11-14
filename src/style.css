@@ -7,8 +7,42 @@ font-family: 'Roboto', sans-serif;
 }
 
 body {
-  margin: 35px auto;
+  margin: 0 auto;
   font-family: "Nunito", sans-serif;
+}
+
+.logo {
+  max-width: 150px;
+  max-height: 40px;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  margin-left: 15px;
+  line-height: 42px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #272142;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 100ms ease-in-out;
+}
+
+nav li a.active,
+nav li a:hover {
+  color: #662eed;
 }
 
 .header {
@@ -21,7 +55,7 @@ body {
     url(../img/bg.png) no-repeat center;
   background-size: cover;
   padding: 47px 0;
-  margin: 100px 0;
+  margin-bottom: 100px;
 }
 
 .header h1 {
@@ -153,7 +187,21 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  nav li {
+    margin-left: 10px;
+  }
+
+  nav li a {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 576px) {
+  nav li a {
+    font-size: 12px;
+  }
+
   .header {
     margin-bottom: 40px;
   }
