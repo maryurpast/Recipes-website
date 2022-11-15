@@ -166,6 +166,25 @@ nav li a:hover {
   text-align: left;
 }
 
+footer {
+  padding: 40px 20px;
+  background-color: #f9f7fe;
+}
+
+footer p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+footer .social-links a {
+  margin-left: 15px;
+  color: #272142;
+}
+
+footer .social-links a:hover {
+  color: #662eed;
+}
+
 @media (max-width: 992px) {
   .header {
     margin-bottom: 60px;
@@ -253,5 +272,20 @@ nav li a:hover {
 
   .content-block h4 {
     font-size: 16px;
+  }
+
+  footer {
+    padding: 20px 10px 40px;
+    position: relative;
+  }
+
+  footer .social-links {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+  }
+
+  footer p {
+    font-size: 12px;
   }
 }
