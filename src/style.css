@@ -65,7 +65,7 @@ nav li a:hover {
   margin-bottom: 4px;
 }
 
-.header p {
+.header h2 {
   font-size: 24px;
   font-weight: bold;
   line-height: 35px;
@@ -74,7 +74,7 @@ nav li a:hover {
   margin: 0 auto;
 }
 
-.homepage-content p {
+.homepage-content h3 {
   font-size: 28px;
   font-weight: bold;
   padding-top: 20px;
@@ -82,7 +82,7 @@ nav li a:hover {
 }
 
 .header-name {
-  margin: 126px auto 100px;
+  margin: 60px auto 70px;
   text-align: center;
   font-weight: bold;
   font-size: 72px;
@@ -97,17 +97,36 @@ nav li a:hover {
   font-size: 64px;
 }
 
+.page-info h3 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #662eed;
+}
+
 .about-page-info {
   font-size: 18px;
   font-weight: normal;
   line-height: 30px;
 }
 
-.page-info h3 {
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #662eed;
+.about-content h2 {
+  margin: 100px 0 40px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #272142;
+}
+
+.about-content h3 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 20px;
+  color: #272142;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .contact-page-info {
@@ -167,6 +186,7 @@ nav li a:hover {
 }
 
 footer {
+  margin-top: 100px;
   padding: 40px 20px;
   background-color: #f9f7fe;
 }
@@ -195,14 +215,26 @@ footer .social-links a:hover {
   }
 
   .header-name {
-    font-size: 68px;
-    margin: 126px auto 50px;
+    font-size: 56px;
+    margin: 40px auto;
   }
 
-  .homepage-content p {
+  .homepage-content h3 {
     font-size: 22px;
     padding-top: 5px;
     margin-bottom: 0;
+  }
+
+  .page-info {
+    margin: 40px 0 0;
+  }
+
+  .about-content h2 {
+    margin: 70px 0 30px;
+  }
+
+  footer {
+    margin-top: 80px;
   }
 }
 
@@ -214,10 +246,25 @@ footer .social-links a:hover {
   nav li a {
     font-size: 14px;
   }
+
+  .page-info h2 {
+    font-size: 48px;
+  }
+
+  .about-page-info {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+  }
+
+  footer {
+    margin-top: 60px;
+  }
 }
 
 @media (max-width: 576px) {
-  nav li a {
+  nav li a,
+  footer p {
     font-size: 12px;
   }
 
@@ -229,12 +276,13 @@ footer .social-links a:hover {
     font-size: 56px;
   }
 
-  .header p {
+  .header h2 {
     font-size: 20px;
   }
 
-  .homepage-content p {
-    font-size: 18px;
+  .homepage-content h3,
+  .about-content h3 {
+    font-size: 20px;
     padding-top: 5px;
   }
 
@@ -246,13 +294,13 @@ footer .social-links a:hover {
     margin: 30px auto;
   }
 
-  .page-info h2 {
+  .page-info h2,
+  .about-content h2 {
     font-size: 32px;
   }
 
   .header-name {
     font-size: 38px;
-    margin: 126px auto 30px;
   }
 
   .content-block p,
@@ -274,6 +322,10 @@ footer .social-links a:hover {
     font-size: 16px;
   }
 
+  .about-content h2 {
+    margin: 40px 0 20px;
+  }
+
   footer {
     padding: 20px 10px 40px;
     position: relative;
@@ -283,9 +335,5 @@ footer .social-links a:hover {
     position: absolute;
     right: 10px;
     bottom: 0;
-  }
-
-  footer p {
-    font-size: 12px;
   }
 }
